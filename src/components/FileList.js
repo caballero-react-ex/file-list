@@ -5,15 +5,11 @@ import testFiles from './TestFiles';
 
 
 function FileList() {
-  console.log(testFiles)
   return (
     <div className="file-list">
       {testFiles.map(fileItem => (
-        console.log(fileItem),
         <FileListItem data={fileItem} key={fileItem.id} />
       ))}
-      
-      
     </div>
   )
 }

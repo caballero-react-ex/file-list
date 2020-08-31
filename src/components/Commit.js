@@ -3,7 +3,9 @@ import React from 'react';
 
 function Commit({commit}) {
   return (
-    <div style={{
+    <div 
+      className="text-truncate"
+      style={{
       width: "100%",
       marginRight: "20px",
       color: "#808080"
