@@ -5,14 +5,13 @@ import Commit from './Commit';
 import Time from './Time';
 
 function FileListItem({data}) {
-  console.log(data.latestCommit.message)
   return (
     <div className="file-list-item flex">
-      <FileName name={data.name} icon={data.type}/>
+      <FileName name={data.name} icon={data.type} />
       <Commit commit={data.latestCommit.message} />
-      <Time />
+      <Time timestamp={data.updated_at} />
     </div>
   )
-}
+};
 
 export default FileListItem;
